@@ -1,0 +1,231 @@
+/* DEPLACEMENT DE MON MODE NUIT */
+section .btn-toggle {
+    margin-top: 80px;
+   
+}
+.btn-toggle {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+body.dark{
+    color: rgb(255, 255, 255)!important;
+    background: #333!important;
+}
+
+body.dark .btn-toggle {
+    background: #f1f1f1;
+    color: #333;
+}
+body.dark h5 {
+    color: rgb(255, 255, 255)!important;
+}
+body.dark h2 {
+    color: rgb(255, 255, 255)!important;
+}
+body.dark p {
+    color: rgb(255, 255, 255)!important;
+
+}
+body.dark .sticky {
+   
+    background: #333!important;
+}
+body.dark header.sticky .navigation li a {
+    color: #f1f1f1 !important;
+  
+}
+ 
+body.dark .accordionItemContent p {
+    color: black!important;
+}
+
+
+body.dark .owl-prev {
+    color: black!important;
+    background: black;
+}
+body.dark .owl-next {
+    color: black!important;
+    background: black;
+}
+
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+body {
+	
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    /* background: rgba( 71, 147, 227, 1); */
+}
+h2  {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: black;
+    background: rgb(201, 201, 201);
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: black;
+    background: rgb(201, 201, 201);
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.milieu{
+    background-color: #087d81;
+    border-radius: 10px;
+    color: black;
+    border: 0;
+    padding: 14px 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 70px;
+    font-size: 15px;
+}
+
+table th{
+    color: black;
+}
+.position{
+       color: #040404;
+    
+}
+.couleur{
+    color: #08dd6f;
+
+}
+
