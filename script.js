@@ -1,45 +1,58 @@
 // fetch ("data.Json")
 //    .then(res=> res.Json())
 //    .then(data=> console.log( JSON.stringify(data)))
-const panier =  "fa-solid fa-bag-shopping" 
-    const json = {
-        "id": 11,
-        "title": "perfume Oil",
-        "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
-        "price": 13,
-        "discountPercentage": 8.4,
-        "rating": 4.26,
-        "stock": 65,
-        "brand": "Impression of Acqua Di Gio",
-        "category": "fragrances",
-        "thumbnail": "https://dummyjson.com/image/i/products/12/thumbnail.jpg",
-       }
-       const stringJson = JSON.stringify(json);
-       const parsedString = JSON.parse(stringJson)
-       console.log (json)
+let prohtml = ""
+let produits = fetch("produits.json")
+.then(res=> res.json())  
+.then(data=> {
+  // console.log(JSON.stringify(data));
+  const customDiv = document.getElementById('products');
+
+  for (const item of data) {
+    prohtml += productElement(item);
+  }
+  customDiv.innerHTML = prohtml;
+})
+//  const json = {
+//         "id": 11,
+//         "title": "perfume Oil",
+//         "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+//         "price": 13,
+//         "discountPercentage": 8.4,
+//         "rating": 4.26,
+//         "stock": 65,
+//         "brand": "Impression of Acqua Di Gio",
+//         "category": "fragrances",
+//         "thumbnail": "https://dummyjson.com/image/i/products/12/thumbnail.jpg",
+//        }
+//        console.log (json)
 
 
-       const customDiv = document.getElementById('custom-div')
-       const product = `
-       <div class="pro">
-            <img src="${json.thumbnail}" alt="">
-            <div class="des chau">
-            <h5>${json.title}</h5>
-             <div class="star">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fa-solid fa-star-half-stroke"></i>
-           </div>
-           <div>${json.description}</div>
-           <h4>${json.price} FCFA </h4>
+       function productElement(product)
+       {
+          return `
+          <div class="pro">
+               <img src="${product.thumbnail}" alt="">
+               <div class="des chau">
+               <h5>${product.title}</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h4>${product.price} FCFA </h4>
+                </div>
+               <a href="#"><i class="fa-solid fa-cart-shopping cart "></i></a>
              </div>
-            <a href="#"><i class="fa-solid fa-cart-shopping cart "></i></a>
-          </div>
-        `;
+           `;
+       }
 
-        customDiv.innerHTML = product;
+      
+
+
+      //   customDiv.innerHTML = product;
 
 
 //    const json = {

@@ -1,5 +1,85 @@
 [{
- "title":"my title"
+ "id": 1,
+ "title": "condensateur 1",
+ "price": 5500,
+ "category": "fil conduteur",
+ "thumbnail": "conden1.jpg"
 },
-
-    {}]
+{
+    "id": 2,
+    "title": "condensateur 2",
+    "price": 7500,
+    "category": "fil conduteur",
+    "thumbnail": "conden2.jpg" 
+},
+{
+    "id": 3,
+    "title": "condensateur 3",
+    "price": 5500,
+    "category": "fil conduteur",
+    "thumbnail": "conden3.jpg"
+},
+{
+    "id": 4,
+    "title": "condensateur 4",
+    "price": 12500,
+    "category": "fil conduteur",
+    "thumbnail": "conden4.jpg"
+},
+{
+    "id": 5,
+    "title": "condensateur 5",
+    "price": 15500,
+    "category": "fil conduteur",
+    "thumbnail": "conden5.jpg"
+},
+{
+    "id": 6,
+    "title": "condensateur 6",
+    "price": 16500,
+    "category": "fil conduteur",
+    "thumbnail": "conden6.jpg"
+},
+{
+    "id": 7,
+    "title": "telephone 1",
+    "price": 15700,
+    "category": "telephone tres rare ",
+    "thumbnail": "tele1.jpg"
+},
+{
+    "id": 8,
+    "title": "telephone 2",
+    "price": 15800,
+    "category": "telephone tres rare",
+    "thumbnail": "tele2.jpg"
+},
+{
+    "id": 9,
+    "title": "telephone 3",
+    "price": 4500,
+    "category": "telephone tres rare",
+    "thumbnail": "tele3.jpg"
+},
+{
+    "id": 10,
+    "title": "telephone 4",
+    "price": 3750,
+    "category": "telephone tres rare",
+    "thumbnail": "tele4.jpg"
+},
+{
+    "id": 11,
+    "title": "telephone 5",
+    "price": 5500,
+    "category": "telephone tres rare",
+    "thumbnail": "tele5.jpg"
+},
+{
+    "id": 12,
+    "title": "telephone 6",
+    "price": 4500,
+    "category": "telephone tres rare",
+    "thumbnail": "tele6.jpg"
+}
+]
