@@ -1,6 +1,3 @@
-// fetch ("data.Json")
-//    .then(res=> res.Json())
-//    .then(data=> console.log( JSON.stringify(data)))
 let prohtml = "";
 let produits = fetch("produits.json")
   .then((res) => res.json())

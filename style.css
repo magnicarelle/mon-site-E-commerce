@@ -366,9 +366,9 @@ footer .col{
 
 /*Gestion Boutique*/
  #page-header{  
-     background-image: url("E.jpeg"); 
+     background-image: url("or8.jpg"); 
     width: 100%;
-    height: 65vh;   
+    height: 40vh;   
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -380,7 +380,7 @@ footer .col{
 #page-header-Contact{
     background-image: url("co.jpg");
     width: 100%;
-    height: 50vh;   
+    height: 40vh;   
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -390,15 +390,15 @@ footer .col{
 }
 
 #page-header-Apropôs{
-    background-image: url("b1.jpg");
-    width: 100%;
+    background-image: url("or7.jpg");
+    width: 100vw;
     height: 40vh;   
     background-size: cover;
     display: flex;
     justify-content: center;
    text-align: center;
    flex-direction: column;
-   padding: 14px;
+   padding: 40px;
 }
 #page-header-Apropôs h2 p span{
    color: red;

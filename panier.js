@@ -34,9 +34,9 @@ class Panier {
     }
   }
 
-  removeFromPanier(product) {
-    this.panier = this.panier.filter((p) => p.id != product.id);
-    this.savepanier();
+  removeFromPanier(product_id) {
+    this.panier = this.panier.filter((p) => p.id != product_id);
+    this.savePanier();
   }
 
   changeQuantity(produit, quantity) {
