@@ -25,12 +25,49 @@ function productElement(product) {
               </div>
               <h4>${product.price} FCFA </h4>
                 </div>
-               <button > <i data-productid=${product.id} class="fa-solid fa-cart-shopping cart-btn cart"> </i> </button>
+               <button class="btn_shop" style="cursor:pointer"> <i data-productid=${product.id} class="fa-solid fa-cart-shopping cart-btn cart"> </i> </button>
              </div>
            `;
 }
+function createToast() {
+  const toast = document.createElement('div');
+  toast.innerHTML = 'Produit Ajouté dans le panier';
+  toast.setAttribute('id', 'toast');
+  document.body.appendChild(toast);
+  return toast;
+}
+
+// function copyLocation(){
+//   navigator.clipboard.writeText(window.location.href);
+// }
+
+function showToast() {
+  const windowToast = document.getElementById('toast');
+  if(windowToast){
+    windowToast.remove();
+  }
+  const toast = createToast();
+  toast.classList.add('show-toast');
+  setTimeout(() => {
+    hideToast(toast);
+  }, 2950);
+}
+
+function hideToast(toast) {
+  toast.classList.add('hide-toast');
+  setTimeout(() => {
+    removeToast(toast);
+  }, 300);
+}
+
+function removeToast(toast) {
+  toast.remove();
+}
+
 
 window.addEventListener("DOMContentLoaded", function () {
+
+  
   const allProducts = JSON.parse(localStorage.getItem("all-products"));
   setTimeout(() => {
     const siteProducts = document.getElementsByClassName("cart");
@@ -40,6 +77,9 @@ window.addEventListener("DOMContentLoaded", function () {
         const product = allProducts.find((item) => item.id == productId);
         const panier = new Panier();
         panier.addProduct(product);
+
+        
+        showToast();
       });
     });
   }, 1000);
